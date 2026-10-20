@@ -105,7 +105,7 @@ Omni-Web-Agent: Autonomous E2E Journey on https://www.saucedemo.com/
 ┌──────┬────────┬─────────┬──────────────────────────────┬──────────────────────────────┬───────┬───────────┐
 │ Step │ Status │ Healed? │ Original Selector            │ Effective Selector           │ Match │  Duration │
 ├──────┼────────┼─────────┼──────────────────────────────┼──────────────────────────────┼───────┼───────────┤
-│  1   │  PASS  │   NO    │ NAVIGATE                     │ [https://www.saucedemo.com/](https://www.saucedemo.com/)   │   -   │ 1251.6ms  │
+│  1   │  PASS  │   NO    │ NAVIGATE                     │ https://www.saucedemo.com/   │   -   │ 1251.6ms  │
 │  2   │  PASS  │   NO    │ #user-name                   │ #user-name                   │   -   │ 2558.5ms  │
 │  3   │  PASS  │   NO    │ #password                    │ #password                    │   -   │ 2331.0ms  │
 │  4   │  PASS  │   NO    │ #login-button                │ #login-button                │   -   │  583.4ms  │

@@ -89,34 +89,33 @@ omni-web-agent/
    python main.py
    ```
 
-## 📊 Live Terminal Output Sample
-
-```text 
-
+### 📊 Live Terminal Output Sample
+```text
 Omni-Web-Agent: Autonomous E2E Journey on https://www.saucedemo.com/
-
 >>> [Stage 1/5] Navigating to Login Page...
 >>> [Stage 2/5] Login Successful. Exploring Catalog Page...
 >>> [Stage 3/5] Cart Verified. Proceeding to Checkout...
 >>> [Stage 4/5] Entering Customer Shipping Details...
 >>> [Stage 5/5] Reviewing Order Summary & Finishing Order...
 ✓ Order Placed Successfully! Viewing confirmation...
+```
 
-StepStatusHealed?Original SelectorEffective SelectorMatchDuration
-1PASSNONAVIGATEhttps://www.saucedemo.com/-1251.6ms
-2PASSNO#user-name#user-name-2558.5ms
-3PASSNO#password#password-2331.0ms
-4PASSNO#login-button#login-button-583.4ms
-5PASSNO#add-to-cart-sauce-labs-backpack#add-to-cart-sauce-labs-backpack-518.0ms
-6PASSNO.shopping_cart_link.shopping_cart_link-512.8ms
-7PASSNO#checkout#checkout-524.4ms
-8PASSNO#first-name#first-name-1592.2ms
-9PASSNO#last-name#last-name-2050.7ms
-10PASSNO#postal-code#postal-code-1698.2ms
-11PASSNO#continue#continue-571.0ms
-12PASSNO#finish#finish-513.7ms
+| Step | Status | Healed? | Original Selector | Effective Selector | Match | Duration |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | PASS | NO | NAVIGATE | saucedemo.com | - | 1251.6ms |
+| 2 | PASS | NO | #user-name | #user-name | - | 2558.5ms |
+| 3 | PASS | NO | #password | #password | - | 2331.0ms |
+| 4 | PASS | NO | #login-button | #login-button | - | 583.4ms |
+| 5 | PASS | NO | #add-to-cart-sauce-labs-backpack | #add-to-cart-sauce-labs-backpack | - | 518.0ms |
+| 6 | PASS | NO | .shopping_cart_link | .shopping_cart_link | - | 512.8ms |
+| 7 | PASS | NO | #checkout | #checkout | - | 524.4ms |
+| 8 | PASS | NO | #first-name | #first-name | - | 1592.2ms |
+| 9 | PASS | NO | #last-name | #last-name | - | 2050.7ms |
+| 10 | PASS | NO | #postal-code | #postal-code | - | 1698.2ms |
+| 11 | PASS | NO | #continue | #continue | - | 571.0ms |
+| 12 | PASS | NO | #finish | #finish | - | 513.7ms |
 
-
+---
 ## 🛡️ License
 
 ​Distributed under the MIT License. See LICENSE for more information.

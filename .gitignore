@@ -1,0 +1,27 @@
+# Environment variables (Sensitive secrets)
+.env
+.env.*
+
+# Python Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Byte-compiled / optimized / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Playwright artifacts & temp files
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# OS and IDE specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

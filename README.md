@@ -18,15 +18,16 @@ An advanced, autonomous web testing framework built with **Python**, **Playwrigh
   - Semantic Content Matching (Text, Names, Placeholders)
   - CSS Hierarchy & Spatial Proximity
 - **Live Visual Cadence (Human-like Interaction)**: Features deliberate typing delays and smooth transitions between multi-page stages, making live demonstrations and headless recordings easy to follow.
-- **Rich Telemetry & Reporting**: Generates structured, color-coded execution tables in the terminal showcasing step statuses, execution latency, and self-healing scores.
+- **Rich Telemetry & Reporting**: Generates structured execution reports in the terminal showcasing step statuses, execution latency, and self-healing metrics.
 
 ---
 
 ## 🛠️ Project Architecture
 
+```text
 omni-web-agent/
 ├── src/
-│   ├── init.py
+│   ├── __init__.py
 │   ├── agent.py          # Core Autonomous Orchestrator & E2E Journey Handler
 │   ├── models.py         # Pydantic schemas (ActionStep, Fingerprint, StepResult)
 │   ├── scanner.py        # DOM Scanner & Dynamic Fingerprint Extractor
@@ -34,7 +35,7 @@ omni-web-agent/
 ├── main.py               # Application entry point
 ├── requirements.txt      # Core dependencies
 └── README.md             # Project documentation
-
+```
 ---
 
 ## 📦 Tech Stack
@@ -49,34 +50,48 @@ omni-web-agent/
 ## ⚙️ Installation & Setup
 
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/satyanarayana51115/omni-web-agent.git
    cd omni-web-agent
    ```
+
 2. **Create & Activate Virtual Environment:**
+
    ```
    python -m venv .venv
    ```
-   ### Windows PowerShell:
+
+   **Windows PowerShell:**
+
    ```
-    .venv\Scripts\activate
+   .venv\Scripts\activate
    ```
-   ### Linux/macOS:
+
+   **Linux/macOS:**
+
    ```
-    source .venv/bin/activate
+   source .venv/bin/activate
    ```
+
 3. **Install Dependencies & Playwright Browsers:**
+
    ```
    pip install -r requirements.txt
    playwright install chromium
    ```
+
 ## 🚦Execution
 
-​4. **Run the complete autonomous E2E journey using:**
+4. **Run the complete autonomous E2E journey using:**
+
    ```
    python main.py
    ```
+
 ## 📊 Live Terminal Output Sample
+
+```text 
 
 Omni-Web-Agent: Autonomous E2E Journey on https://www.saucedemo.com/
 
@@ -104,5 +119,8 @@ Omni-Web-Agent: Autonomous E2E Journey on https://www.saucedemo.com/
 │  12  │  PASS  │   NO    │ #finish                      │ #finish                      │   -   │  513.7ms  │
 └──────┴────────┴─────────┴──────────────────────────────┴──────────────────────────────┴───────┴───────────┘
 
+```
+
 ## 🛡️ License
+
 ​Distributed under the MIT License. See LICENSE for more information.
